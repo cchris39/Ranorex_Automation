@@ -1,0 +1,144 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{03A786BA-51B8-4B25-BB42-EA5B73DBE8C9}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Dom_AppraiserSanityTest</RootNamespace>
+    <AssemblyName>Dom_AppraiserSanityTest</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>cacf5043-160b-4c6e-8c32-05b2c7902a2e</projectdefaultrepository>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.PDF, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\Users\an.zhou\Downloads\Ranorex_PDF_Library\Ranorex.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppraiserAcceptRequest.cs">
+      <id>daf6012e-a11a-4ba7-bd0d-839ee3ecd532</id>
+    </Compile>
+    <Compile Include="AppraiserAppointment.cs">
+      <id>39f2a6a3-1282-4ca7-b4ae-a6603cf652b2</id>
+    </Compile>
+    <Compile Include="AppraiserComment.cs">
+      <id>8f78eb66-9677-4640-b483-3dad8f66b910</id>
+    </Compile>
+    <Compile Include="AppraiserDashBorad.cs">
+      <id>b35e0821-80cf-4dd6-94cb-6fa08868972e</id>
+    </Compile>
+    <Compile Include="AppraiserFeeIncrease.cs">
+      <id>1069067b-a1ab-4753-830e-58af1a8fc4c3</id>
+    </Compile>
+    <Compile Include="ReportToPDF.cs">
+      <id>3018df40-2f49-4c66-9191-3485a5fd6d1c</id>
+    </Compile>
+    <Compile Include="UploadMembership.cs">
+      <id>85122866-4685-4c68-b40c-2ab58f55bde6</id>
+    </Compile>
+    <Compile Include="AppraiserSearchRequest.cs">
+      <id>87dc0179-60aa-4a24-ba89-6413051f45c6</id>
+    </Compile>
+    <Compile Include="AppraiserUploadNonNasForm.cs">
+      <id>5b3c91b2-f70d-499a-bdd3-96cadf5e1e57</id>
+    </Compile>
+    <Compile Include="AppraiserViewRequest.cs">
+      <id>d236b866-e424-4184-8ae5-45656cb1a0a5</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>f2405351-0858-44a7-b6d0-3922d643f59a</id>
+    </Compile>
+    <Compile Include="ClientSubmitRequest.cs">
+      <id>6d56ba05-ca79-4002-97a5-e28c74e456b0</id>
+    </Compile>
+    <Compile Include="Dom_AppraiserSanityTestRepository.cs">
+      <DependentUpon>Dom_AppraiserSanityTestRepository.rxrep</DependentUpon>
+      <id>2a18cee0-90be-463d-ae4e-5675a6012234</id>
+      <BoundTo>cacf5043-160b-4c6e-8c32-05b2c7902a2e</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="FindAssignAppraiserFromDB.cs">
+      <id>83657cf0-1b61-4305-b9fb-6c2de9325674</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>74df93af-4d38-4db8-8837-a65cfe531ccf</id>
+    </Compile>
+    <Compile Include="SysAdminUpdateFee.cs">
+      <id>98550de4-ee7b-4dec-ad51-2dd3a0c16486</id>
+    </Compile>
+    <None Include="app.config">
+      <id>bb91d20a-905e-4ecf-95dc-1a9d4d0fe500</id>
+    </None>
+    <None Include="Dom_AppraiserSanityTestRepository.rximg">
+      <DependentUpon>Dom_AppraiserSanityTestRepository.rxrep</DependentUpon>
+      <id>dbe19dd8-635e-42eb-a6e9-d0c5b51c5c02</id>
+      <BoundTo>cacf5043-160b-4c6e-8c32-05b2c7902a2e</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="Dom_AppraiserSanityTestRepository.rxrep">
+      <id>cacf5043-160b-4c6e-8c32-05b2c7902a2e</id>
+      <repoid>e35182ca-4feb-485c-b719-2f37cee21316</repoid>
+      <reporootid>2fb11da8-6c9b-4473-b2e2-32b57231dea5</reporootid>
+    </None>
+    <Content Include="Dom_AppraiserSanityTest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>bae58783-d564-4ce2-bee4-1272f66089ff</id>
+    </Content>
+    <Content Include="Dom_AppraiserSanityTest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e11eec4f-78ec-4bbc-bfc3-1091e9c0f4f8</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>
