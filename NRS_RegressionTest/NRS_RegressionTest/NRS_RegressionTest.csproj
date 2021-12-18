@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{AF1134F2-1697-490D-8010-8690ECE01129}</ProjectGuid>
+    <TargetFrameworkProfile />
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NRS_RegressionTest</RootNamespace>
+    <AssemblyName>NRS_RegressionTest</AssemblyName>
+    <RanorexVersion>6.1</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>5d06aa70-439d-4d92-92c7-348481dfe28d</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Ranorex.Core" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb" />
+    <Reference Include="Ranorex.Plugin.Flex" />
+    <Reference Include="Ranorex.Plugin.Java" />
+    <Reference Include="Ranorex.Plugin.Mobile" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb" />
+    <Reference Include="Ranorex.Plugin.Msaa" />
+    <Reference Include="Ranorex.Plugin.Office" />
+    <Reference Include="Ranorex.Plugin.Qt" />
+    <Reference Include="Ranorex.Plugin.RawText" />
+    <Reference Include="Ranorex.Plugin.Sap" />
+    <Reference Include="Ranorex.Plugin.Uia" />
+    <Reference Include="Ranorex.Plugin.Web" />
+    <Reference Include="Ranorex.Plugin.Win32" />
+    <Reference Include="Ranorex.Plugin.WinForms" />
+    <Reference Include="Ranorex.Plugin.Wpf" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <id>084b9afb-1246-40ab-b321-0055a8d2991c</id>
+    </Compile>
+    <Compile Include="Appraisal.cs">
+      <id>414e5b23-2eab-46bd-949c-693636a12ec3</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>0c93a53f-c06e-4997-9814-689e112b9c1b</id>
+    </Compile>
+    <Compile Include="Files.cs">
+      <id>87574323-bb5c-45bb-b94f-6924d90080c6</id>
+    </Compile>
+    <Compile Include="Insurer.cs">
+      <id>a56e6445-66c0-465b-b2b8-11e52567d965</id>
+    </Compile>
+    <Compile Include="Lawyer.cs">
+      <id>4224571a-cdd6-40df-a444-edbc39741208</id>
+    </Compile>
+    <Compile Include="Lender.cs">
+      <id>b387bcf6-eb0e-43e0-af1b-eaf194a2fe92</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <id>ea40d813-0a11-4d1d-a5df-f0fa9259700c</id>
+    </Compile>
+    <Compile Include="ManualWIP.cs">
+      <id>0c9279e7-d05a-44c0-9d9b-e1d13a0ab142</id>
+    </Compile>
+    <Compile Include="NRS_RegressionTestRepository.cs">
+      <BoundTo>5d06aa70-439d-4d92-92c7-348481dfe28d</BoundTo>
+      <DependentUpon>NRS_RegressionTestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>2948fb80-d403-4cb6-b523-617f51355f6b</id>
+    </Compile>
+    <Compile Include="PM.cs">
+      <id>4a83e48f-b787-4fd2-9586-1b6ee6c93a80</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>28ba4c9f-6210-4df4-9744-ae02c65f77ad</id>
+    </Compile>
+    <Compile Include="Realtor.cs">
+      <id>fe29f2d6-b0f4-427c-b512-37f108eac15d</id>
+    </Compile>
+    <Compile Include="Reports.cs">
+      <id>d6a8d4ad-48b3-49ab-822f-89d75c6f48b5</id>
+    </Compile>
+    <Compile Include="WIP.cs">
+      <id>536eb1c8-ed1f-4b8d-adf9-0f3d61634e66</id>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <id>244c833e-a042-4da4-a7a8-8ea8719bb96b</id>
+    </None>
+    <None Include="NRS_RegressionTestRepository.rximg">
+      <BoundTo>5d06aa70-439d-4d92-92c7-348481dfe28d</BoundTo>
+      <DependentUpon>NRS_RegressionTestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>06178e61-a5de-4b3e-9ecf-3c415aa12fcc</id>
+    </None>
+    <None Include="NRS_RegressionTestRepository.rxrep">
+      <id>5d06aa70-439d-4d92-92c7-348481dfe28d</id>
+      <repoid>3eb59b41-12cc-4c7e-9124-86c1cc38cf1a</repoid>
+      <reporootid>f975205b-7b0e-41c7-9720-52419b47f4ff</reporootid>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NRS_RegressionTest.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>a34259d7-3a8b-4513-acee-19c8ce74950a</id>
+    </Content>
+    <Content Include="NRS_RegressionTest.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>4fa0df4a-42fd-4532-8022-7cada40d2fed</id>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" />
+</Project>

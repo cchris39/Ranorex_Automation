@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc
+rxversion="6.1">
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="NRS_RegressionTest"
+      id="3b261c6e-27a4-435d-a27e-9ea24c2fb784"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="NRS_RegressionTest"
+      id="3b261c6e-27a4-435d-a27e-9ea24c2fb784"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

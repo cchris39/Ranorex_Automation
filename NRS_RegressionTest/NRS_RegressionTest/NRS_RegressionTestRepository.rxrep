@@ -1,0 +1,2035 @@
+﻿<repository
+name="NRS_RegressionTestRepository"
+id="3eb59b41-12cc-4c7e-9124-86c1cc38cf1a"
+rxversion="6.1">
+	<codegen
+	classname="NRS_RegressionTestRepository"
+	namespace="NRS_RegressionTest"/>
+	<rootfolder
+	name="Root"
+	id="f975205b-7b0e-41c7-9720-52419b47f4ff"
+	searchtimeout="0ms"
+	capname="unknown"
+	isrooted="True"
+	usecache="True">
+		<appfolder
+		name="NRS"
+		id="647fc945-2cb4-45ac-a644-c8302b01348c"
+		searchtimeout="30000ms"
+		capname="webdocument"
+		addcaps="container,webdocument"
+		isrooted="True"
+		usecache="False">
+			<folder
+			name="LenderDashboard"
+			id="b0200c2b-5e0d-40b7-9546-a82a3b31c8a3"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="Div_CretaedToday"
+				id="23d9c008-0acd-4dba-ac41-68d6cd4539aa"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="6cf0e693-e744-4d15-ab98-9b1ab1dd9782">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@class='dr-table-cell rich-table-cell dashTopColumn']//span[]
+				</item>
+				<item
+				name="Div_DueToday"
+				id="684669d2-75a4-4fac-a70f-81e897dce916"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="ed761b79-0478-40b0-9431-235485ec197e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@class='dr-table-cell rich-table-cell dashTopColumn']//td[2]//span[]
+				</item>
+				<item
+				name="Div_Overdue"
+				id="b13ce70d-46db-4c90-bfbf-89bdbf39b49b"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="0a478c72-8ff2-4b67-a8c1-5ffef7dd07c0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@class='dr-table-cell rich-table-cell dashTopColumn']//td[3]//span[]
+				</item>
+				<item
+				name="Div_Upcoming"
+				id="27b0c6ae-560e-4cdf-b85c-cfb47d5b3925"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="82e38049-073d-41d4-8593-561eb7766427">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@class='dr-table-cell rich-table-cell dashTopColumn']//td[4]//span[]
+				</item>
+				<item
+				name="Milestone_FIP"
+				id="bb9a354f-f546-4b2f-9e40-308be26d5e14"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:barChartpanel']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="58bfe442-6b7a-4301-9b82-b2fdde1d7394">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:barChartpanel']
+				</item>
+				<item
+				name="AutoWIP"
+				id="a5335512-cd92-4cd4-a3f0-3da7b1620771"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:WIP']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1759fccc-6a5d-4954-8cab-2a7e18f14b60">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:WIP']
+				</item>
+				<item
+				name="MWIP_Me"
+				id="ee3e1663-9def-4210-b178-0fca311ee5fd"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:MWIPBYME']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="a0846490-669c-4e63-ad80-d212996474e0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:MWIPBYME']
+				</item>
+				<item
+				name="MWIP_Others"
+				id="0f37f714-06e5-4a6c-9d6c-beb4a03384b9"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:MWIPBYOTHERS']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="a3d1cb41-4076-44ea-af0d-2af67cdf10ed">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:MWIPBYOTHERS']
+				</item>
+				<item
+				name="WIP_Task"
+				id="f7185fe4-f21a-480d-9e16-fefab34937a3"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:TASK']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="8c762778-abe4-47c0-9398-8e90f34cd22a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:TASK']
+				</item>
+				<item
+				name="WIP_Provider"
+				id="d97b3fb3-eb9f-4a16-b7cf-91c76a948082"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'j_id557:PROVIDER']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="ef02fc91-7842-4866-87e3-7263b8352925">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id557:PROVIDER']
+				</item>
+			</folder>
+			<folder
+			name="TopMenu"
+			id="b2694a5a-8a31-42f1-87d5-ed582bf082e1"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="AdminlinkSpan"
+				id="de2172d0-d28b-4444-8a65-bc5e1e43007c"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'adminlink_span']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="58afa332-6be9-46a7-90c7-d3d2d1bcfba7">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'adminlink_span']
+				</item>
+				<item
+				name="DashBoard"
+				id="a34c0145-1d7c-4b5e-b9c2-cfc2ea2aa611"
+				searchtimeout="30000ms"
+				capname="spantag"
+				refpath="/dom[@domain='test.nwrs.ca']//a[#'dashboardlink']/span[@innertext='DashBoard']"
+				addcaps="unknown,webelement,spantag"
+				refimgid="10c78dfc-fa96-46a0-81fc-c2208dcf7f40">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'dashboardlink']/span[@innertext='DashBoard']
+				</item>
+				<item
+				name="WIP"
+				id="7309a324-32d8-4096-889c-59c8bd3b1f31"
+				searchtimeout="30000ms"
+				capname="spantag"
+				refpath="/dom[@domain='test.nwrs.ca']//a[#'taskslink']/span[@innertext='WIP']"
+				addcaps="unknown,webelement,spantag"
+				refimgid="84ac31e1-d110-40b5-92e6-bafd2b59b44e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'taskslink']/span[@innertext='WIP']
+				</item>
+				<item
+				name="Files"
+				id="28a24461-6ce4-410a-a9e6-2c2188077eaf"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'myaccountFileslink_span']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="2a92f6ae-32df-49cf-9353-a0aff95ca35f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'myaccountFileslink_span']
+				</item>
+				<item
+				name="Reports"
+				id="9e82ec53-80dd-477d-bed6-d75f6b6dd939"
+				searchtimeout="30000ms"
+				capname="divtag"
+				refpath="/dom[@domain='test.nwrs.ca']//div[#'reportLink_span']"
+				addcaps="unknown,webelement,divtag"
+				refimgid="6525dc54-89c9-4a12-8306-f7137e10209a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'reportLink_span']
+				</item>
+				<item
+				name="Search"
+				id="bde1bab4-8a25-4143-8fae-28423621ecff"
+				searchtimeout="30000ms"
+				capname="spantag"
+				refpath="/dom[@domain='test.nwrs.ca']//a[#'searchLink']/span[@innertext='Search']"
+				addcaps="unknown,webelement,spantag"
+				refimgid="f94f98ca-ce2a-4ad8-9060-db97621fc7e3">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'searchLink']/span[@innertext='Search']
+				</item>
+				<item
+				name="LoanData"
+				id="91e42412-7916-415d-8f3b-131752ee9644"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="d0c02d9a-4352-4c85-b08d-8a8e951d8649">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'loanDataLink_span']
+				</item>
+				<item
+				name="ManualWIP"
+				id="ffaa6e6a-7fb5-47dc-986c-022f27d612db"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="cedc8511-e2cd-4181-a1af-700eb7266674">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'manualWipLink']/span[@innertext='Manual WIP ']
+				</item>
+				<item
+				name="Legal"
+				id="a422d337-d34d-4568-a93f-8c6d26d539b2"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="44423e3e-e2a4-4724-9b9a-0ef648b5e92b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'legalLink_span']
+				</item>
+				<item
+				name="MortgageInsurer"
+				id="091b9c79-5108-4115-a68d-7f5cf04e9e26"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7a6a3798-c1e7-49d1-95da-1c609dec4502">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mortgageInsuranceLink_span']
+				</item>
+				<item
+				name="Appraisal"
+				id="76b3a3b1-c91d-4bb7-8ee6-7283bdcf2c8f"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="bee432cc-464d-4cc8-8c43-3e89426016e0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'appraisalLink_span']
+				</item>
+				<item
+				name="Realestate"
+				id="366f8fda-764a-4a49-b543-16bcb40f0d0e"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="0ef753e2-3fd4-4e61-afbc-98613dc85076">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'realestateLink_span']
+				</item>
+				<item
+				name="PropertyManager"
+				id="e06a3323-6823-4645-a726-f199050663df"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="dcd4664c-89c2-4e87-bfc2-6656bf3580d3">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'propertyManagerLink_span']
+				</item>
+				<item
+				name="FilesDIV"
+				id="d31aff0b-4b4a-4a47-ae65-cafa6ef5fd5d"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="a0822ba5-a1a3-449d-b449-53f1924d08b2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'headerbar']/?/?/tr/td[4]
+				</item>
+			</folder>
+			<item
+			name="Logoutlink"
+			id="59fcd414-6c7f-4064-807b-ede0b15e013e"
+			searchtimeout="30000ms"
+			capname="atag"
+			refpath="/dom[@domain='test.nwrs.ca']//a[#'logoutlink']"
+			addcaps="unknown,webelement,atag"
+			refimgid="30e4768d-a2dd-4d4e-ba4d-720d1885f315">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'logoutlink']
+			</item>
+			<folder
+			name="Homepage"
+			id="9f62b448-58b6-4594-a792-c31893c1a7f5"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="Loginlink"
+				id="fe7309f7-180a-46ed-9619-7b92cf968034"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="5349b917-77c4-4294-a2f5-b0e666c76fda">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='Login' and @tagname='a']
+				</item>
+				<item
+				name="LoginUsername"
+				id="969fd460-fe62-4194-a01e-632617fadefb"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				refpath="/dom[@domain='test.nwrs.ca']//input[#'login:username']"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="49c012f7-14d2-4a6f-bc7f-7ed4a9d20734">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'login:username']
+				</item>
+				<item
+				name="LoginPassword"
+				id="d07b7078-e907-47c4-a3f5-81f45414a1b2"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				refpath="/dom[@domain='test.nwrs.ca']//input[#'login:password']"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="acb94e9a-14b2-483e-a340-1d4bfe97d478">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'login:password']
+				</item>
+				<item
+				name="LoginBtn"
+				id="d53dba5e-bf52-4acd-bddc-6fbc0ac6fad4"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				refpath="/dom[@domain='test.nwrs.ca']//input[#'login:defaultActionButton']"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="40b61457-48db-4847-9701-7d8808a8b975">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'login:defaultActionButton']
+				</item>
+			</folder>
+			<folder
+			name="WIP"
+			id="162b1f09-f9ab-4afd-81d1-3e95a1263586"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="UsrSelectionBox"
+				id="e4cb09d4-b998-4f4e-99e2-e349783abd88"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="63677c50-5a00-4221-abab-6f944a0e6fa5">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id~'lenderContactPerson' and @tagname='select']
+				</item>
+				<item
+				name="SelectBtn"
+				id="c3d658d9-dc87-4195-9eec-f95e79df6702"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="261b670e-bd1e-4041-ba3b-a9fe1d481be0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//form[#'j_id558']/table//input[@type='submit' and @value='Select' and @start='fileopen']
+				</item>
+				<item
+				name="Lender_WIP"
+				id="f8284567-9273-4820-a0c7-6c3c7391e03e"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="c1fc1b47-7b04-4b48-bb8e-c6e6c5ec8e0e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[#'currentuserwip_lbl']
+				</item>
+				<item
+				name="LenderOutstandingWipTab"
+				id="6302da08-8a83-4595-9c25-07dc0193830a"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="b148cb64-c220-49b3-8b6a-a3ce7201e4e0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[#'lenderOutstandingWip_lbl']
+				</item>
+				<item
+				name="Lender_AllFile_WIP"
+				id="5e1f1e63-4b52-4792-9ee3-55b9b56e8274"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="0e554edd-1824-4552-9166-409130c8d4f5">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[#'lenderContactAllWip_lbl']
+				</item>
+				<item
+				name="Usertasksdiv"
+				id="3ef9beac-e9e5-4aeb-b16d-4c6d577740e8"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7dcf8892-ba68-493b-89de-6bd034962b0d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'usertasksdiv']
+				</item>
+				<item
+				name="TaskTable"
+				id="19998227-baf0-4196-bd4a-cd03d585b8e4"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="fce998ba-0740-4736-8213-ecb38ef83583">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'contentpanel_body']/div[6]
+				</item>
+				<item
+				name="LoanNbr_Input"
+				id="3b43b813-648d-442c-9a4b-35c8169c1f16"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="9aa5a648-9cd1-4dfd-b75d-d2a9ec2c6a2b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//thead//tr[1]//input[]
+				</item>
+				<item
+				name="N1stLoan_Nbr"
+				id="bb18f49a-6abb-4bf9-9f39-fa7d1e77c660"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="5bb58fdb-2e81-4e3c-a228-2a5b28c5d833">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[1]//a[]
+				</item>
+				<item
+				name="N1stLoan_Borrower"
+				id="2cf496b9-f3e9-47f4-ae62-d6195cc55396"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="bf7ceb46-b9b1-426b-9593-98bf2cb60205">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[2]
+				</item>
+				<item
+				name="N1stLoan_Address"
+				id="e7a68578-5d58-4cc1-be8f-e74d575d440a"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1e51f4ac-ffdb-455f-a78b-e6cc906f5221">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[3]//span[]
+				</item>
+				<item
+				name="N1stLoan_Created"
+				id="28d2d54b-38af-4ec2-9de5-0f633d6fc426"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="82dd57e4-bdf5-458b-8384-f5deaffca1c5">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[4]//span[]
+				</item>
+				<item
+				name="N1stLoan_Due"
+				id="c76b28ec-edc1-43fc-a11d-1c7c41d4b247"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="dd0f19d3-f0f5-4d53-bbd1-e7bc6dc753fe">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[5]//span[]
+				</item>
+				<item
+				name="N1stLoan_DayRemain"
+				id="d90d39b7-bc61-42ba-aa79-77cc750b4369"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="b99fa9ab-56c4-45af-be69-c9d6403b705a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[6]//span[]
+				</item>
+				<item
+				name="N1stLoan_Task"
+				id="66b6ad80-a37a-4391-a3c9-08fb362612b6"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="24259b52-4344-4f51-8ed7-dfac8f98a0cd">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[7]
+				</item>
+				<item
+				name="N1stLoan_View"
+				id="a08c36bc-0825-460c-9792-380eb296920a"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="be4255bb-7ccf-4369-97e8-1f9918d8b486">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[8]//a[]
+				</item>
+				<item
+				name="HeaderData"
+				id="886a47b3-c4d4-48b8-b5a3-68e3e44cc8f1"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="352a08f0-3619-4515-a1bc-26bbc70743c4">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'headerData']
+				</item>
+				<item
+				name="NewContentWithMilestones"
+				id="42a4de31-8aab-4f43-92f7-1597ef16d6c2"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="c9c19b5f-b2b0-48b5-a249-9c5b2fa0fb97">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='contentpanel_body']/div[6]
+				</item>
+				<item
+				name="Calendar"
+				id="6335e51d-f112-4f7d-bee1-075231900f78"
+				searchtimeout="30000ms"
+				capname="table"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1f9d9096-1387-4ecb-8f18-1ac43f2541f7">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@id&lt;'dueDate']
+				</item>
+				<item
+				name="TaskDueDateTable"
+				id="5a487aa1-369c-4908-8c2b-955ab3812f19"
+				searchtimeout="30000ms"
+				capname="table"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1f18ff63-985c-489c-a8d4-96de488501a8">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@id&lt;'dueDate']//table[]//tbody[]//tr[9]//table[]
+				</item>
+				<item
+				name="TaskDueDate"
+				id="42d04115-2887-481d-bf4a-686fd5e10822"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="d2e39050-3700-40d2-9b03-a3b65fe5b31c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@id&lt;'dueDate']//table[]//tbody[]//tr[9]//table[]//tr[1]//td[1]//div[]
+				</item>
+				<item
+				name="TaskHeader_Task"
+				id="c1a5d92e-94ca-4c34-9d67-39cc59bd08c3"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="a505a1c1-f4e1-42b7-9bb9-49645639e00c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='contentpanel_body']/div[6]//div[@id&lt;'_header']
+				</item>
+				<item
+				name="TaskDate_Created"
+				id="3f912b52-3c64-4da9-854a-6734438dc4b5"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="cd0dbb6a-6e10-43e8-b186-5b70e10007dc">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='contentpanel_body']/div[6]//div[@id&lt;'_body']/?/?/span[]
+				</item>
+				<item
+				name="Task_Address"
+				id="adc3d277-7194-4c0f-b1ba-4015db917910"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="10b2e3f8-5eeb-4b09-83a7-76b0d67dd1f4">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='contentpanel_body']/div[6]//div[@id&lt;'_body']/?/?/span[]/following-sibling::span[]
+				</item>
+				<item
+				name="ViewLoanNbr"
+				id="364f6576-989d-4c01-a6ac-9a10eda270b6"
+				searchtimeout="30000ms"
+				capname="strongtag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="97128fde-82da-4e95-a67d-33945bfd1426">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']/strong[@tagname='strong']
+				</item>
+				<item
+				name="ViewBorrower"
+				id="2ac8f811-6880-4aa6-a273-6e743a13c4f7"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="98ee7f40-34ae-4ab8-a6f5-f1afad3a015d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']//span[]/span[]/span[]
+				</item>
+				<item
+				name="LoanAddress"
+				id="7fbdb5fb-59dc-41b8-a680-2b5a2e8bb652"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="2a821d86-5912-40fb-acb8-2e15a2c418e3">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']//table//tbody//td[1]//span[]
+				</item>
+				<item
+				name="WIP_View"
+				id="63cac0d1-c33e-4940-89f2-0fc4e98a4dfe"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="96b8dd30-7ea5-48e6-99d5-a2db483ac92d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='View']
+				</item>
+			</folder>
+			<folder
+			name="Files"
+			id="10cfe3ab-6f60-4a99-ae81-66cf45097817"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="LegalActionTab"
+				id="93642966-9b70-42da-a713-88d87c5a4c5e"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="b1e7aeca-9245-4229-9ad9-5ea5efbae5aa">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@innertext~'Legal Action']
+				</item>
+				<item
+				name="LossMitigationTab"
+				id="02d26e5f-02c0-4541-a437-4fbec1649df1"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="07f918ed-a1b6-404c-bd55-6a8e26d3a429">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'contentpanel_body']/div[6]//table[]//tbody[]/tr[1]//form[]//table[]//tbody[]/tr[1]/td[@id&lt;'cell']
+				</item>
+				<item
+				name="FileslinkMenu"
+				id="5e1ea53d-44fe-4003-9f57-79b7fc35d1b9"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'myaccountFileslink_menu']
+				</item>
+				<item
+				name="FilesInProcess"
+				id="8497660d-15ed-448d-ba27-88fad2dd3ab2"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'myaccountFileslink_menu']//a[]/div[@innertext='Files In Process ']
+				</item>
+				<item
+				name="NewFiles"
+				id="7694a637-5fcd-4111-a1e8-254a36ca375f"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='myaccountFileslink_menu']//a[]/div[@innertext='New Files']
+				</item>
+				<item
+				name="LegalActionForm"
+				id="94985238-81bf-498f-b56f-6febcbaf9966"
+				searchtimeout="30000ms"
+				capname="table"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="de72cb6a-9224-43cb-9ef2-89dc685042c5">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'inprocesstablelegalAction:tu']
+				</item>
+				<item
+				name="Legal_1stLoanNbr"
+				id="ff072409-4c67-41fa-be51-4a08241b6445"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="6774c3c2-6095-4a16-8a4f-408c2b2e1d1f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'inprocesstablelegalAction:tu']//tbody[]/tr[1]//tr[@id~'inprocesstablelegalAction:n:0']//td[1]/div[]/a[]
+				</item>
+				<item
+				name="LegalActionLoanNbr_field"
+				id="186aef88-5f5b-4406-bba9-690a691abf49"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="1d7ee812-8f2f-4600-8cf3-70f5b6e031aa">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'inprocesstablelegalAction:tu']//input[]
+				</item>
+				<item
+				name="FilesLoanNbr"
+				id="8fc8519e-cdb9-4338-bedb-559c2875dab5"
+				searchtimeout="30000ms"
+				capname="strongtag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="863588de-7b3c-46f6-80d2-63ae76018dd2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']/strong[@tagname='strong']
+				</item>
+				<item
+				name="LoanClosureCodeLegalAction"
+				id="cb01f179-4f6e-4182-ac69-a62acb7cab80"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="2897c7ac-d805-4dfc-aaf1-41ef6dc24698">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@name&lt;'loanClosureCodeLegalAction' and @tagname='select']
+				</item>
+				<item
+				name="CloseFile"
+				id="ced7bf2c-03a7-4d50-bfe5-a093f65315eb"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="05a08afa-8c62-4864-9053-ee26851012a7">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Close File']
+				</item>
+				<item
+				name="FilesMilestones_bk"
+				id="5140df8a-2bf3-404d-ab8d-d56e7aadb60c"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="d13a45f8-cf62-435d-ade6-c7776a56f3cf">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@tagname='select' and @tagvalue='org.jboss.seam.ui.NoSelectionConverter.noSelectionValue']
+				</item>
+				<item
+				name="FilesMilestones"
+				id="5583f03f-78fe-4aed-a262-c0d43e7c86f9"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="191bdfe2-dc1c-48c3-97d8-638cb6128ec1">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//form[#'overAllStatus']/select[@name&gt;'overAllStatus']
+				</item>
+				<item
+				name="MilestonesProgressBar"
+				id="0ac08b0c-bf12-4095-b40d-d3078f2216c9"
+				searchtimeout="30000ms"
+				capname="trtag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="9e7084ae-e5f9-4a19-bcc7-3fa44798dd61">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'processBar']//tr[]
+				</item>
+				<item
+				name="SuccessfullySavedRecordBox"
+				id="ea558c18-63fc-444c-a3e4-cd1d730e0836"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="636fa651-100b-4e1e-9d56-bdb132139613">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'gritter-item-1']//span[@innertext~'^Successfully\ saved\ record' and @class='ui-growl-title']
+				</item>
+				<item
+				name="FilesReopenFile"
+				id="2331d2a8-8ad3-4918-a92a-293083e2d385"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="09837ad7-b349-44cb-897a-98f82f28f3e9">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mortgageContainer_body']//input[@value='Reopen file']
+				</item>
+				<item
+				name="ClosedFiles"
+				id="b616f551-66df-4c8c-89bc-10aae60b1b58"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="e0274838-23da-4592-bf73-cf159aea5712">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mortgageContainer_body']//table[@id&lt;'loanNumber_Panel']//input[@value='Close File']
+				</item>
+			</folder>
+			<folder
+			name="Admin"
+			id="5e3f0759-a90b-474f-b26d-815b3c1bd880"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="AdminLoanDataTab"
+				id="387e6ea3-c220-44de-a030-e71d1a2a87c3"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="8fb39cf4-344d-4996-8a2b-dc9324bfedec">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'adminLoanDataTab:anchor']
+				</item>
+				<item
+				name="AdminEditLoanData"
+				id="3bd51dcd-ffb3-4680-a4fe-46a0ff003913"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="943fb2d0-c168-4c5d-bdca-31694176a00e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'adminLoanDataTab_LoanData:anchor']/div[@innertext='Edit Loan Data ']
+				</item>
+				<item
+				name="AdminLoanNbr"
+				id="9871cd0e-3b50-4c72-969a-3f0e9c2b4c09"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="ae5d5d85-87eb-4ab8-aebd-e6a6209a6465">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'contentpanel_body']/div[6]//table[]//tr[1]//td[1]//input[]
+				</item>
+				<item
+				name="AdminOriginalLoanAmount"
+				id="cba70867-e768-402f-a7e0-8ea8c5458322"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="6e226af1-d06a-48dc-8667-7c80b07b9819">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'j_id557:originalLoanAmount']
+				</item>
+				<item
+				name="AdminInterestRate"
+				id="433e520a-d790-437d-9ad6-5aa1c5985b15"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="a6fcdb23-7d03-42fe-96cc-7b2c2ed6a2b3">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'j_id557:interestRate']
+				</item>
+				<item
+				name="ImportCreateFilesTab"
+				id="814a9e02-e1fa-4a68-8636-2e1eea3e8824"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="7c98fe29-24f7-491f-a91b-82d031f3760f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'import_create_Files:anchor']
+				</item>
+				<item
+				name="ImportCreateFilesHeader"
+				id="85d8e74a-d1d6-42bd-b370-2544bf337819"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="e23ab4fc-fd23-4eb4-b848-3c9dc3cb128d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id='contentpanel_body']/div[6]//div[@innertext='Import / Create Files']
+				</item>
+				<item
+				name="UploadFile"
+				id="6d49051f-1b81-4299-8f58-5b4d008bca1a"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="a5f4c6d4-d040-4d14-ab83-561e5edd94ae">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//form[#'uploadfileform']//input[@id~'uploadfileform:j_id']
+				</item>
+				<item
+				name="UploadNewDocuToLoanBox"
+				id="a7b25e73-30b5-40d1-9eee-92e1e1a9993f"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="0459ddc0-70ec-495a-95a8-e0723fca4a1c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'uploadfileform:modalForLoanFileUploadContentTable']/tbody/tr[2]/td
+				</item>
+				<item
+				name="UploadfileSelectDocuPath"
+				id="8d981a42-0dbb-42d7-8590-a41cad17f795"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="cc31c2b0-8a11-47da-8f0e-44d816dde3b2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'uploadfileform:file']
+				</item>
+				<item
+				name="UploadDocumentBtn"
+				id="fd27ea2d-157f-4531-a2c8-6b643879c32c"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="810cccab-06ca-484f-a4b3-9c1f63ec6769">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'uploadfileform:fileuploadbutton']
+				</item>
+				<item
+				name="AdminReassignmentAnchor"
+				id="a8e94e7b-9de4-4ae7-8411-1d297a64da3d"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="282256e6-29cc-4e43-abc7-669f5e10c378">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'actors_reassignment:anchor']
+				</item>
+				<item
+				name="ReassignLenderARS_Link"
+				id="b7ab362f-331d-456e-be7e-0c503de36cff"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'actors_reassignment_menu']//div[@id='adminLoanDataTab_actorAdminTab_LenderContactAdmin']//div[@innertext='Reassign Lender ARS']
+				</item>
+				<item
+				name="LoanData_SaveBtn"
+				id="14bf3174-6367-4c77-809e-88a7aee38e5d"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="682fd1c1-5b3d-4ea0-8d96-1babb81d26d5">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Save']
+				</item>
+				<item
+				name="AdminSelectLender"
+				id="2493ee86-1b3d-4217-8592-c4cdfd375d16"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="74c9da09-a799-4927-a59d-42ee7a8dbd77">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@tagname='select' and @id='reassignLenderForm:newLender']
+				</item>
+				<item
+				name="ReassignLenderARS_Btn"
+				id="0eae8aeb-59c7-4847-b35b-91c6f0513a22"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="c4357df4-9ad5-4b42-98f7-564f8510622c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//form[#'reassignLenderForm']//table[2]//tr[1]//input[@name~'reassignLenderForm']
+				</item>
+				<item
+				name="ImportCreateFiles"
+				id="97b069bb-148a-4c90-865b-e324218e38c0"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="544b8c26-6bfa-4b37-badd-fc46947a07b1">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'adminCreateNewFilesTab:anchor']/div[@innertext='Import / Create Files ']
+				</item>
+				<item
+				name="RichMenuListBg"
+				id="c7762b95-2c10-4465-affb-dfd55efa0635"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="613248fd-bf40-4bcc-8b51-12c3513d199e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'import_create_Files_menu']/div
+				</item>
+				<item
+				name="Copy_of_EditLoanData"
+				id="52a4d0de-fa11-4eb4-bf36-f386bc48bf04"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="3b3ac542-eeb9-4f71-948a-3bf0d6d1fb73">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'adminLoanDataTab_LoanData:anchor']/div[@innertext='Edit Loan Data ']
+				</item>
+				<item
+				name="Admin_ReassignLink"
+				id="628076a8-99a3-4cb4-9398-dfe43686b3f0"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="c260aefa-eb2b-44af-bcce-412e8f5757b4">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'adminLoanDataTab_menu']//div[#'actors_reassignment']//span[@id='actors_reassignment:anchor']
+				</item>
+				<item
+				name="ActorsReassignmentMenu"
+				id="4daf2160-5e02-411d-937e-a51bf0b23585"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="d4de82c1-d68e-4535-bd37-df8b56853e53">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'actors_reassignment_menu']
+				</item>
+				<item
+				name="ReassignLenderARS"
+				id="5de0f5cd-383c-458a-82ac-10d50ff0724e"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="986e4409-20db-4efe-a914-fc09d1d2c704">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'adminLoanDataTab_actorAdminTab_LenderContactAdmin:anchor']/div[@innertext='Reassign Lender ARS ']
+				</item>
+			</folder>
+			<item
+			name="Record_SuccessfullySavedBox"
+			id="3e465c45-2a79-48bd-8be0-7e2da8801d9e"
+			searchtimeout="30000ms"
+			capname="spantag"
+			addcaps="unknown,webelement,spantag"
+			refimgid="19c388bc-5fd8-4fe0-93e8-003c4ef152b8">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'gritter-item-1']//span[@innertext~'^Successfully\ saved\ record' and @class='ui-growl-title']
+			</item>
+			<folder
+			name="ManualWIP"
+			id="e7c9759b-65d2-4082-9ce5-2df7081a079b"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="TitleInput"
+				id="a9165dd2-b9e5-4532-806a-7584c100f2a9"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="06784b81-f2af-4040-9161-41423f5ce194">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'title']
+				</item>
+				<item
+				name="TaskDuedate"
+				id="9311e6c5-4092-4083-b87e-295a5a09e1df"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="510f5a10-4507-42b8-a497-9b8d18ea692e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'dueDateInputDate' and @tagname='input']
+				</item>
+				<item
+				name="AssignToSelect"
+				id="f596f879-bf50-4965-8318-dc245cc5fddc"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="ded09b8a-651e-4f81-987c-cf5e96ea42c0">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@tagname='select' and @id&lt;'player']
+				</item>
+				<item
+				name="CreateWIPEntry"
+				id="104bbce8-aba7-4825-91c0-1a7fb7b9e945"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="d8512740-1919-467e-bb8f-42ed5b897f39">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@tagvalue='Create WIP Entry' and @tagname='input']
+				</item>
+				<item
+				name="DescriptionTextArea"
+				id="98e218c0-83e5-442d-a14e-3a97dc3ac28b"
+				searchtimeout="30000ms"
+				capname="textareatag"
+				addcaps="unknown,webelement,textareatag"
+				refimgid="7bc508c8-bb2e-407c-9a5b-437f419ee80f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//textarea[@id&lt;'descTestArea']
+				</item>
+				<item
+				name="New_TaskName"
+				id="78961e1f-09d6-49bf-b1b9-fc831c476f1d"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="783e0f5a-489e-4970-ad11-93f9ef345cc2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[@class='dr-table rich-table dataTable' and @tagname='table']//tbody[]//tr[1]//td[7]
+				</item>
+			</folder>
+			<item
+			name="EmailSentSuccessfully"
+			id="de51dec3-3dbf-4c5f-b6e3-69f8b3291898"
+			searchtimeout="30000ms"
+			capname="spantag"
+			addcaps="unknown,webelement,spantag"
+			refimgid="b7d70933-0894-409e-9640-7754a66b3cf6">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'gritter-item-1']//span[@innertext='Email Sent successfully']
+			</item>
+			<folder
+			name="LoanData"
+			id="ae269b04-88b3-4b88-950e-7389683cd394"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="LoanDataMenuDiv"
+				id="572066a6-e627-44de-863d-fea10f11a95a"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'loanDataLink_menu']/div
+				</item>
+				<item
+				name="MasterLoanInfo"
+				id="86f4ca7d-862d-4cd0-87ce-915e6016f67b"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="9f0ad54e-9992-4f62-b82d-27105fe534c9">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'loanDataLink']//div[@innertext='Master Loan Info']
+				</item>
+				<item
+				name="AddBorrower"
+				id="8998326a-7fcf-42f6-80c2-9fc190d3dc43"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="012caa4f-4d0d-434f-9105-1a16a7f76416">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Add Borrower']
+				</item>
+				<item
+				name="NewBorrowerWindow"
+				id="a9c7a354-bfa7-418d-824c-b1f33fd14437"
+				searchtimeout="30000ms"
+				capname="table"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="ce22e428-e94f-4978-855f-d2a4a601709a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'BorrowerModalPanelContentTable']
+				</item>
+				<item
+				name="NewBorrower_LastName"
+				id="d8837aa4-64f5-496e-8d3f-1b103677baee"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="d8b8b138-ea0e-4ea5-9022-bbc46ce97942">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'BorrowerModalPanelContentTable']//tr[2]//table[]//tr[1]//input[]
+				</item>
+				<item
+				name="NewBorrower_FstName"
+				id="3f6589c7-c3cb-4726-88c3-5acab9115a5b"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="87d35b3c-6ac6-4aaf-9e53-6c6cce337000">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'BorrowerModalPanelContentTable']//tr[2]//table[]//tr[2]//input[]
+				</item>
+				<item
+				name="NewBorrower_Email"
+				id="6fdf0651-cd5a-4f80-98ee-49da02b6e0a5"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="d761b02e-0187-49b4-96e6-f54329ae4376">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'BorrowerModalPanelContentTable']//tr[2]//table[]//tr[16]//input[]
+				</item>
+				<item
+				name="NewBorrowerSave"
+				id="2ecd7411-666c-40c9-b9db-bb9831a3c406"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="69d83524-8231-468d-9d2e-3e64152c3dfc">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'BorrowerModalPanelContentTable']//input[@tagvalue='Save']
+				</item>
+				<item
+				name="NewBorrower_BreakSign"
+				id="c2980740-1a34-4e83-a37b-1870b58fef54"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="631f288b-9a52-414e-bc7d-e368438d89f7">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']//span[]/span[]/span[]/following-sibling::span[]
+				</item>
+				<item
+				name="NewBorrower_Added"
+				id="1d79905e-0cc3-41c9-8aab-8fdfb2d2ac17"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,strongtag"
+				refimgid="a2cd6c81-da72-4181-b01d-b4e8d54d0877">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[#'HeaderLoanDesc']//span[]/span[]/span[]/following-sibling::span[]//following-sibling::span[]
+				</item>
+				<item
+				name="Milestones"
+				id="7712aced-c48a-44c3-80b7-f71b4a70534c"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="7f1373a6-fd79-4ded-a667-b2e093c4a94a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//form[#'overAllStatus']/select[@name&gt;'overAllStatus']
+				</item>
+			</folder>
+			<folder
+			name="Appraisal"
+			id="d2083be2-f02f-4f1f-8e01-136fa7159b1e"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="AppraisalHistoryPanel"
+				id="8730dc72-4b30-4dfc-af7f-024264d958fd"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="e0082c46-4d31-4340-89e2-3274f2096354">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'historyPanel']
+				</item>
+				<item
+				name="AddAppraisalHistory"
+				id="64b0a88d-95c0-44d8-ac56-cbd9923d7e38"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="f23a6105-67b1-4f91-89d2-492aacb3ea3e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'scrollDivAIT']//input[@value='Add Appraisal History']
+				</item>
+				<item
+				name="NewAppraisalHistoryWindow"
+				id="ffe20c7c-6819-448e-8ff0-6d390fd06441"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="d43a83ac-9f6e-44da-a615-95fa159126ce">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']
+				</item>
+				<item
+				name="Appraisal_Status"
+				id="720075b8-aac2-4c63-91f2-c3bbe9d78824"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="f87fda3e-b0d7-42ad-b0a6-7bc9a6128f81">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[4]//select[]
+				</item>
+				<item
+				name="Appraisal_Type"
+				id="6f6a19df-a992-4aae-ada8-9d592fa1f9de"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="424b5a32-d069-4532-8613-69d4796663d9">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[3]//select[]
+				</item>
+				<item
+				name="Appraisal_OrderDate"
+				id="c4fc291c-beb7-48ec-950b-b34e9bb08128"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="2552a63b-67da-4195-b2a9-fddd3527197c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[5]//input[@id&lt;'orderedInputDate']
+				</item>
+				<item
+				name="Appraisal_ReceiveDate"
+				id="ea2b00ed-6593-45fd-90bf-8711ed4a28a6"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="796f8c90-1ad1-4212-acaf-5bed2cef3dd6">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[6]//input[@id&lt;'receivedInputDate']
+				</item>
+				<item
+				name="Appraisal_DueDate"
+				id="c60c4562-23ef-43a5-91ba-40175c7f4cf7"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="3456d53f-e683-4f90-bd85-bc35476316c1">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[7]//input[@id&lt;'dueDateInputDate']
+				</item>
+				<item
+				name="Appraisal_AsIsValue"
+				id="8d7b142e-5b46-47cb-a86a-fb9db79324bd"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="995b73be-e7b4-4dd4-a228-d68844ee4ee2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[8]//input[@id&lt;'value']
+				</item>
+				<item
+				name="Appraisal_AsImprovedValue"
+				id="6dc31a68-a205-4c88-a999-8f5b383b3eb2"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="a5ceab01-e70e-4d7c-8b3f-fb456093d50e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[9]//input[@id&lt;'valueAsImproved']
+				</item>
+				<item
+				name="Appraisal_AppointmentDate"
+				id="d1e3fbbd-119c-46de-ae9c-b69e417d9361"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="00f4104e-526e-4c3b-b134-3e98b7528957">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]//table[]//tr[10]//input[@id&lt;'appointmentDateInputDate']
+				</item>
+				<item
+				name="SpecialInstruction"
+				id="ffafe6ed-3acc-486b-8f0b-b0d6ce3c96ed"
+				searchtimeout="30000ms"
+				capname="bodytag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7135a91f-d12e-4b7c-8250-45a9411b712d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//table[]//tr[2]//div[@id&lt;'specialInstruction']//span[]//tr[1]//iframe[]//body[#'tinymce']
+				</item>
+				<item
+				name="Appraisal_ID"
+				id="87dd1845-cd14-404a-acbd-18a0b68553c4"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="8f8e02ce-b172-463f-af99-558bf416fc84">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'AppraisalHistoryModalPanel-AppraisalHistoryContentTable']//form[]//input[@id&lt;'appraisalNumber']
+				</item>
+				<item
+				name="Copy_of_Copy_of_NewAppraisalHistoryWindow"
+				id="a31e3ed7-5bc0-46da-9d2c-d3cfe63ee7d4"
+				searchtimeout="30000ms"
+				capname="form"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7685e0a1-593a-4b94-bef6-278d1ccb1817">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'AppraisalHistoryModalPanel-AppraisalHistoryContentDiv']//form[]
+				</item>
+				<item
+				name="SaveBtn"
+				id="6920709c-2dda-48fb-adbb-495f16aa5503"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="c35ddcb8-ab49-47bb-9e65-d9e9c5e07bab">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Save']
+				</item>
+				<item
+				name="AppraisalInformation"
+				id="4ca98b37-d3a7-4e66-8632-aa5e38e2eb93"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7a028c9e-570b-43d5-b913-bbeec772ac68">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'appraisalLink_menu']//a[]//div[@innertext='Appraisal Info ']
+				</item>
+			</folder>
+			<item
+			name="SuccessfullyArchivedAppraisalHistory"
+			id="501293cf-5c6c-4f56-8890-b53cb15fe5d0"
+			searchtimeout="30000ms"
+			capname="spantag"
+			addcaps="unknown,webelement,spantag"
+			refimgid="02ff4bba-1478-440e-8709-658e343b9db2">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'gritter-item-10']//span[@innertext~'^Successfully\ archived\ App']
+			</item>
+			<item
+			name="SuccessfullySavedRecordAppraisalHistory"
+			id="bf0268e9-ab1b-42f1-93a7-4b71148fe09f"
+			searchtimeout="30000ms"
+			capname="spantag"
+			addcaps="unknown,webelement,spantag"
+			refimgid="1359a3fe-53ff-4654-b8c0-1f57903a625e">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[@id&gt;'gritter-item-']//span[@innertext~'^Successfully\ saved\ record']
+			</item>
+			<folder
+			name="Insurer"
+			id="bc1103e7-ae0c-4808-a85a-f7365f99529a"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="MortgageInsurerDivMenu"
+				id="186f474b-f047-428b-a920-8747202590a3"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mortgageInsuranceLink_menu']//div[@innertext='Mortgage Insurer']
+				</item>
+				<item
+				name="MortgageInsurer"
+				id="26f6e421-9427-407e-ba40-b24ad6de89e4"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mortgageInsuranceLink_menu']//a[]//div[@innertext='Mortgage Insurer ']
+				</item>
+				<item
+				name="AddMainClaim"
+				id="feaa1514-7801-47f9-9d6c-6f8dd994ec5e"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="4cf2d5d0-504b-4c91-b8c6-8025c8832553">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Add Claim']
+				</item>
+				<item
+				name="ClaimType"
+				id="32beb198-5e86-47d3-9823-1037d2810a5b"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="5f86586e-f662-46f7-b5b7-87649363144b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'claimType']
+				</item>
+				<item
+				name="ClaimFiledInputDate"
+				id="56274b82-7e51-49c7-8061-130ec32d67eb"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="8a878bf8-664e-4f49-be69-c38fe58d50f6">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'claimFiledInputDate']
+				</item>
+				<item
+				name="ClaimPaidInputDate"
+				id="32006efb-1420-4668-bad4-e57bcc1c5e8a"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="681e5967-7507-4fce-b43d-f05e46ee4e4f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'claimPaidInputDate']
+				</item>
+				<item
+				name="ClaimAmount"
+				id="24b639b9-441d-47cb-b58f-0576602f97a1"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="12000000-4fde-4b9b-b40d-80a962af6472">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'claimAmount']
+				</item>
+				<item
+				name="SaveClaim"
+				id="239a76a6-f371-4071-85d4-a1084a15f666"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="2d824e12-9039-49f4-b139-68979f7728b8">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'ClaimModalPanelContentTable']/tbody/?/?//form//input[@value='Save']
+				</item>
+				<item
+				name="MainClaimList"
+				id="631e8a17-88f3-40e2-94d6-bc1cbf63e939"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="fc4d4842-ede5-4566-a34b-ed2def5be5dd">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mainClaimPanelDiv']
+				</item>
+				<item
+				name="MainClaimList_QuickEdit"
+				id="e7a54130-3082-4296-b0d3-2b612bf7f00a"
+				searchtimeout="30000ms"
+				capname="imgtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="8dd7b959-72af-467c-8332-4306e8626eb2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'mainClaimPanelDiv']//table[@id&lt;'claimList']//img[@alt='Quick Edit']
+				</item>
+				<item
+				name="SupplementClaimList"
+				id="dfee801d-ae65-43f0-920d-2322028ae875"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="2eabf001-a29e-4f7e-a602-1ed3f695f42c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'supplementClaimPanelDiv']
+				</item>
+				<item
+				name="AddSupplementClaim"
+				id="b839f711-2036-4930-bb77-b982ee1771f2"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="7505ea73-e4d8-4322-9c52-5320fde30562">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'supplementClaimPanelDiv']//input[@value='Add']
+				</item>
+				<item
+				name="SupplementClaimWindow"
+				id="e6618136-b6d9-444f-b564-5651be2538fd"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="c1900ffd-ef7a-499e-a680-6d23356649bc">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'SupplementClaimModalPanelContentDiv']
+				</item>
+				<item
+				name="SupplementClaimType"
+				id="8da85c54-8c89-4ed4-a35c-70e36ebcf9ea"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="f294ccb6-51e0-4a52-b7d5-cec65498607a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'SupplementClaimModalPanelContentDiv']//form[]//table[]//tr[1]//select[]
+				</item>
+				<item
+				name="SupplementClaimFileDate"
+				id="791d2f13-1ee8-485a-b220-865453ebb5d3"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1d24ddee-861f-4006-a025-1fb1392c27e1">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'SupplementClaimModalPanelContentDiv']//form[]//table[]//tr[2]//input[@id&lt;'claimFiledInputDate']
+				</item>
+				<item
+				name="SupplementClaimAmount"
+				id="f381da58-b6e5-4917-add8-a469602b73a6"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="ff420f28-40a9-481e-8005-2cdd78999c98">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'SupplementClaimModalPanelContentDiv']//form[]//table[]//tr[4]//input[@id&lt;'claimAmount']
+				</item>
+				<item
+				name="SupplementClaimSaveBtn"
+				id="06517637-1497-4bf0-984e-9e8a741d26b3"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="50dd0af4-497b-494c-8725-e0b1a0714fcc">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'SupplementClaimModalPanelContentDiv']//input[@value='Save']
+				</item>
+			</folder>
+			<folder
+			name="Reports"
+			id="2b0c18a5-a344-4f6d-9680-d9f7734974ce"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="ReportsMenuDiv"
+				id="f41130fe-fb6b-42e7-a5bf-3283b2b7aa7f"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'reportLink_menu']/div
+				</item>
+				<item
+				name="Reports"
+				id="6b26da7b-9d8c-4fe9-8f9d-af8cebc7828b"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'reportLink_menu']/div[]//a[]/div[@innertext='Reports ']
+				</item>
+				<item
+				name="ActiveFiles"
+				id="bf43b33a-b103-4db2-8498-5702aafe2b40"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="b5fabf4d-00bf-4170-badd-8153a367c536">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='Active Files ' and @tagname='a']
+				</item>
+				<item
+				name="ClosedFiles"
+				id="f7f820a4-2f03-455c-8147-95022187e64a"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="fd6cd9d6-0684-4269-952e-7b4eb902c0cb">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='Closed Files' and @tagname='a']
+				</item>
+				<item
+				name="LoanServicerSelectTag"
+				id="8f22fbab-21b4-411f-82c6-68ddb7da53ae"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="89666ad4-548f-445e-b3f1-75f682e05793">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'selectedMortgageServicer']
+				</item>
+				<item
+				name="LoanSecuredTypeSelect"
+				id="6d644aef-2c01-4c49-8d5a-888d570b5368"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="bedba9e5-992b-4e8f-8ca0-6c1da4ee3032">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'selectedSecuredType']
+				</item>
+				<item
+				name="StartDateInputDate"
+				id="04088c50-bb00-4472-814c-86d5f4dfeb58"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="9f18f80a-65e5-4ab7-8904-1921d34c457d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'startDateInputDate']
+				</item>
+				<item
+				name="CreateReportBtn"
+				id="aedcd2e2-e4b7-428f-9a51-6604132bdfde"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="ce0c9b49-2c31-41c4-af1b-315422584436">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='Create Report' and @tagname='a']
+				</item>
+				<item
+				name="ActorName"
+				id="a8ef1a0a-d7da-4f5a-8924-11f904c70438"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="3bdd06d8-f7cf-4623-ba9c-dd27fcece537">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'actorName']
+				</item>
+				<item
+				name="ViewAsPdf"
+				id="141070f0-1016-4a61-80ef-5cbed52d3536"
+				searchtimeout="30000ms"
+				capname="imgtag"
+				addcaps="unknown,webelement,imgtag"
+				refimgid="c77b955a-cb55-478e-a54d-dc0dcb81bc00">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[@id&lt;'viewReportAsPDF']/img[]
+				</item>
+				<item
+				name="ViewAsExcel"
+				id="43570d9a-d63f-4fd0-8ebc-7aead0c45210"
+				searchtimeout="30000ms"
+				capname="imgtag"
+				addcaps="unknown,webelement,imgtag"
+				refimgid="63388c98-6e7a-4c10-8d0a-c4a9244349dc">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[@id&lt;'viewReportAsEXCEL']/img[]
+				</item>
+				<item
+				name="ViewAsHTML"
+				id="563b8b10-e2e5-4edb-85e1-a644b52a3d23"
+				searchtimeout="30000ms"
+				capname="imgtag"
+				addcaps="unknown,webelement,imgtag"
+				refimgid="e7c2e41d-82c5-48c8-8062-b2782eec3cdd">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[@id&lt;'viewReportAsHTML']/img[]
+				</item>
+				<item
+				name="CloseReport"
+				id="e66b7ac0-db11-43fb-9151-56811d3fcf1f"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="dc12ab97-746a-4a9d-9026-845a53abaead">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@id&lt;'closeReportModalPanel']/span[@innertext='Close Report']
+				</item>
+				<item
+				name="ViewHTML_ReportLink"
+				id="5bd98453-2d30-4fde-a061-dc77212448e2"
+				searchtimeout="30000ms"
+				capname="atag"
+				addcaps="unknown,webelement,atag"
+				refimgid="f1e2db68-182c-4e27-a40c-bc2e0b17873d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@innertext='View Report as HTML']
+				</item>
+				<item
+				name="SorryNoDataFound"
+				id="c97c0934-468d-4eef-bb94-ade50c59af0f"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="3c8d4669-a564-4802-912d-c31d52f6da52">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//span[@id&lt;'createReportResultNoDataFound']/span[@innertext='Sorry, No Data Found!']
+				</item>
+			</folder>
+			<folder
+			name="PM"
+			id="0b36e882-aff4-4bd5-9ed2-ea83a27f34a0"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="PropertyManagerDivMenu"
+				id="d7660f5b-7453-4b59-b09c-cf2e6fa2a6fd"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'propertyManagerLink_menu']
+				</item>
+				<item
+				name="PM_PropertyInfo"
+				id="e2b2bf3d-2e12-48c5-93f2-b3695b79e008"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'propertyManagerLink_menu']//a[]/div[@innertext='PM / Property Info ']
+				</item>
+				<item
+				name="PM_OccupancySelect"
+				id="c1d58992-92e1-4755-802b-e5da8523cddf"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="3ad00a10-9093-4f40-a320-14d1316b5120">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'gritter-item-1']/div/div[2]/span[@innertext~'^Successfully\ saved\ record']
+				</item>
+				<item
+				name="PMPropertyInfo"
+				id="51c40138-87b6-4e72-8011-cc174a59c7a6"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="48286561-38e2-429d-a334-3a08c51cb792">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'propertyManagerLink_menu']/div[#'rich-menu-list-bg']//div[@innertext='PM / Property Info']
+				</item>
+				<item
+				name="OwnerAlternativePhone"
+				id="4f1f33ea-e6a5-47cb-963c-ed341004f2af"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="c9fcdc56-f839-4185-89c9-f623c132697d">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'loanData_ownerAlternativePhone']
+				</item>
+				<item
+				name="OwnerPrimaryPhone"
+				id="da1d3fbd-7abc-46e1-acf9-7c07174c8009"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="09c24ca7-3d94-471f-87f5-4b9f4ad32edd">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'loanData_ownerPrimaryPhone']
+				</item>
+				<item
+				name="PMLockBoxCode"
+				id="fd4f2021-dc5c-4ee1-a76d-c40570416ab2"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="ccff2cd6-ccb3-4fd4-a139-8b835385928b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@innertext='PM Lock Box Code ']//input[]
+				</item>
+				<item
+				name="PmStatus"
+				id="1e11b891-0053-47b8-889b-0f8cfa0c01f2"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="4d7dde16-ad04-472f-a8ba-de18a067c67e">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'pmStatus']
+				</item>
+				<item
+				name="PmStatus_Update"
+				id="398a6963-ef17-419b-b052-2070df43e0aa"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="9abefb47-6809-44ab-a0e4-4cb90440f761">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@innertext='Status ']/input[@value='Update']
+				</item>
+				<item
+				name="SuccessfullySavedRecordPropertyManager"
+				id="2c56d51a-1746-45ea-a1b2-043e020c9ab0"
+				searchtimeout="30000ms"
+				capname="spantag"
+				addcaps="unknown,webelement,spantag"
+				refimgid="fd513434-321a-4c71-81f5-e303149dbb25">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//dl[@id&lt;'pmmessages']/?/?/span[@innertext~'^Successfully\ saved\ record']
+				</item>
+				<item
+				name="LoanDataOccupancySelect"
+				id="c53c3cf5-749a-47f1-ba9f-3c4b432159c3"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="aab44ae0-1ee6-44c5-80d8-75fa0ea24c87">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'loanData_occupancy_dom']
+				</item>
+			</folder>
+			<item
+			name="Search"
+			id="664382af-39d2-48c9-9919-cf73dd6420d1"
+			searchtimeout="30000ms"
+			capname="spantag"
+			addcaps="unknown,webelement,spantag"
+			refimgid="7b044989-b08a-4c63-abd5-9136c811308e">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'searchLink']/span[@innertext='Search']
+			</item>
+			<item
+			name="QuickSearchField"
+			id="879a1d5f-c044-42a5-8683-4ff7b8364335"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			addcaps="unknown,webelement,tdtag"
+			refimgid="4015957b-132b-4c4a-992b-918a8440c137">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//table[#'quickSearchResultsForm:searchInputSection']//td[@innertext~'^Please\ type\ mortgage\ numb']//input[]
+			</item>
+			<item
+			name="QuickSaerchIcon"
+			id="14eac195-e133-45a6-86da-3e63f216c8ef"
+			searchtimeout="30000ms"
+			capname="imgtag"
+			addcaps="unknown,webelement,imgtag"
+			refimgid="1e354d2c-f4ad-464d-89eb-c60f64404289">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[#'quickSearchResultsForm:doLoanDataSearchButton']/img[]
+			</item>
+			<item
+			name="QuickSearchResult"
+			id="570b0f1c-bf14-40f8-ac86-b27ec3f0a044"
+			searchtimeout="30000ms"
+			capname="atag"
+			addcaps="unknown,webelement,atag"
+			refimgid="6817b5b5-259d-4262-a313-f3aff99b7cf4">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@id&gt;'quickSearchResultsForm:quickSearchResultsTableLEGAL_ACTION']
+			</item>
+			<item
+			name="QuickSearchLoanData"
+			id="dae14138-5784-40d6-bfcb-8ee095a2043e"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			addcaps="unknown,webelement,inputtag"
+			refimgid="c076c472-8118-46ff-9dba-5ec73a503c80">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'quickSearchResultsForm:freeTypeLoanData']
+			</item>
+			<item
+			name="QuickSearchLegalInfo"
+			id="f5b488ea-b8dd-4eb3-9b06-9f8c718f2cf3"
+			searchtimeout="30000ms"
+			capname="inputtag"
+			addcaps="unknown,webelement,inputtag"
+			refimgid="2cdb6316-7af1-4239-9ac4-5fca65a8099b">
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[#'quickSearchResultsForm:legalInfoInputText']
+			</item>
+			<folder
+			name="Lawyer"
+			id="3f3d2229-f296-453b-abe0-50a1d3289ed3"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="LegalLinkMenu"
+				id="f9df7b1a-f469-4088-8b31-1dbf33031f53"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="1f092dd2-a04f-43be-95f2-ee37e9909448">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'legalLink_menu']
+				</item>
+				<item
+				name="Lawyer_LegalInfo"
+				id="4d991b87-b357-4e16-b15c-1943e146ba62"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="6b8a578b-3587-4e67-a474-1f506af1af24">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'legalLink_menu']//a/div[@innertext='Legal Info ']
+				</item>
+				<item
+				name="Lawyer_LitigationCommentArea"
+				id="861e8702-9fbb-4fdd-b4a6-aaf0478fba76"
+				searchtimeout="30000ms"
+				capname="bodytag"
+				addcaps="unknown,webelement,bodytag"
+				refimgid="c908d2f2-6d4e-43ef-8e59-7e95497e805b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//iframe[@id&lt;'legal_legalCommentsTextArea_ifr']//body
+				</item>
+				<item
+				name="Lawyer_LegalFileNumber"
+				id="10f9a5c7-5b28-47bd-9cf9-03304b163c78"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="002a3806-3c4e-4cb6-9cd0-703da5691da8">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'legal_legalFileNumber']
+				</item>
+				<item
+				name="Lawyer_LegalCourtNumber"
+				id="1baf6142-b213-4d06-ac19-1749242b455d"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="b5ffdf38-3555-4e00-a2fa-ecfb5def1606">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'legal_courtNumber']
+				</item>
+				<item
+				name="LegalStatus"
+				id="7251f2b0-0df2-41ac-87fb-875f1227d7d8"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="f6f32893-1a73-4a3e-b291-ce394f6e3873">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'status']
+				</item>
+				<item
+				name="LawyerStatus_Update"
+				id="ffe55abc-c58b-4388-b865-b6bce6acb7ed"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="9915a652-c8ce-4be2-a43f-1416a0d43ba2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@innertext='Status ']/input[@value='Update']
+				</item>
+				<item
+				name="SuccessfullySavedRecordLegalInfo"
+				id="36f4adca-18ad-4734-8424-0e5022cfe653"
+				searchtimeout="30000ms"
+				capname="litag"
+				addcaps="unknown,webelement,litag"
+				refimgid="48f78c0f-5c37-4820-bf94-83b265b91a37">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'j_id588']//li[@innertext~'^Successfully\ saved\ record']
+				</item>
+				<item
+				name="OrderType"
+				id="2c8f76e0-eea4-478e-92ad-f86e9103766c"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="0d895ef3-8cdd-4e33-a62c-e88a7ccb8b36">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'orderType']
+				</item>
+			</folder>
+			<folder
+			name="Realtor"
+			id="1c5ec596-c7c5-4b13-9b2d-530c875fe710"
+			searchtimeout="0ms"
+			capname="unknown"
+			isrooted="False">
+				<item
+				name="RealestateLinkMenu"
+				id="f9fb80d3-9907-48c2-9acf-669dc6541ace"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'realestateLink_menu']
+				</item>
+				<item
+				name="AgentListing"
+				id="d5c49ee4-bd26-4075-9949-b8d4d37c30b2"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'realestateLink_menu']//a[]/div[@innertext='Agent / Listing ']
+				</item>
+				<item
+				name="RealtorStatus"
+				id="d7ab8609-6da0-4746-8bcd-5bd70fb233d4"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="ea4b9a0c-13dd-4a8d-9bf1-85a33e622b2a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'status']
+				</item>
+				<item
+				name="Realtor_Update"
+				id="f7d6ba7d-800d-4761-8efa-21c984517056"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="2d69a5b5-beb5-474c-9837-029be228b8a2">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//td[@innertext='Status ']/input[@value='Update']
+				</item>
+				<item
+				name="QuickEdit"
+				id="fe73a96b-91d3-42ef-b0c7-e5ddfa20f6b9"
+				searchtimeout="30000ms"
+				capname="imgtag"
+				addcaps="unknown,webelement,imgtag"
+				refimgid="c80c0c51-fa22-45ef-8df3-fbf20c35010c">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//a[@id~'realEstateListingList:0']/img[@alt='Quick Edit']
+				</item>
+				<item
+				name="EditRealEstateListingWindow"
+				id="45659ee7-c89b-4d77-8b2c-dc02219e75ac"
+				searchtimeout="30000ms"
+				capname="divtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="836e6886-e04c-4852-aa71-a373997a90ab">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'RealEstateListingModalPanel-RealEstateListingContentDiv']
+				</item>
+				<item
+				name="SaveListingBtn"
+				id="c33429be-4e66-4952-8521-b4397d0c3eec"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,divtag"
+				refimgid="c9e13962-7376-45bd-b3ae-164cc424e62f">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//div[#'RealEstateListingModalPanel-RealEstateListingContentDiv']//input[@value='Save']
+				</item>
+				<item
+				name="RealEstateBoard"
+				id="254a1a1c-0a14-41c8-a8ed-f10187ad5846"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="5efe3f70-3334-4686-811f-5771a3b063fd">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'realEstateBoard']
+				</item>
+				<item
+				name="ListPrice"
+				id="df2507f8-2aaf-4e01-abb7-690d768b80ff"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="43d2c2dc-1a77-477d-8af7-cab84fc5f00b">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'listPrice']
+				</item>
+				<item
+				name="MinSalePrice"
+				id="be6ed263-bf95-4ec3-9e37-20bbcd02b70f"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="a111865a-3c94-4a96-b77d-7bfbec8c4068">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@id&lt;'minSalePrice']
+				</item>
+				<item
+				name="NoData"
+				id="0a16a5a2-becc-4cfb-ae84-5af212bef46c"
+				searchtimeout="30000ms"
+				capname="tdtag"
+				addcaps="unknown,webelement,tdtag"
+				refimgid="3a4221ee-0d67-4867-a488-b6160ce14b4a">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//tr[@id&lt;'realEstateListingList:noDataRow']/td[@innertext='No data']
+				</item>
+				<item
+				name="AddListing"
+				id="f4bfb8a6-0c4e-4f67-886d-168c43584cc1"
+				searchtimeout="30000ms"
+				capname="inputtag"
+				addcaps="unknown,webelement,inputtag"
+				refimgid="af70206e-3f89-4be7-8e3b-4e7166e0bc83">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//input[@value='Add RealEstate Listing']
+				</item>
+				<item
+				name="MasterAgentSelect"
+				id="15d28dd1-1b57-4271-849a-8e33ab94a6de"
+				searchtimeout="30000ms"
+				capname="selecttag"
+				addcaps="unknown,webelement,selecttag"
+				refimgid="48eb8cec-e1bc-4b1f-b1ea-37deb0b1d1e7">
+					/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']//select[@id&lt;'masterAgent']
+				</item>
+			</folder>
+			<basepath>
+				/dom[@domain='test.nwrs.ca' and @caption='Nationwide Recovery Services']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<appfolder
+		name="ChooseFileToUpload"
+		id="296f1480-2eee-4e10-9f9a-08e4fadb6d12"
+		searchtimeout="30000ms"
+		capname="form"
+		refpath="/form[@title='Choose File to Upload']"
+		addcaps="form,nativewindow"
+		isrooted="True"
+		usecache="True">
+			<item
+			name="Text1148"
+			id="c6a724d6-58f8-4c5f-b89f-e26068a2b390"
+			searchtimeout="30000ms"
+			capname="text"
+			refpath="/form[@title='Choose File to Upload']/combobox[@controlid='1148']/text[@controlid='1148']"
+			addcaps="text,nativewindow"
+			refimgid="3109c27b-bc66-422a-83ff-1ca0089db51b">
+				/form[@title='Choose File to Upload']/?/?/text[@controlid='1148']
+			</item>
+			<item
+			name="ButtonOpen"
+			id="6a6afe4e-9b78-4125-9870-24fbe25108f3"
+			searchtimeout="30000ms"
+			capname="button"
+			refpath="/form[@title='Choose File to Upload']/button[@text='&amp;Open']"
+			addcaps="button,nativewindow"
+			refimgid="e7603487-d803-4f67-9202-743900ea82fc">
+				/form[@title='Choose File to Upload']/button[@text='&amp;Open']
+			</item>
+			<basepath>
+				/form[@title='Choose File to Upload']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAOWSURBVDhPjZJtTFtVGMdPRUL8QIIouI63Dcmy
+bjayTRHJ5qYzum8m2+pm4qLZnNmbG6wtb6JlGwOHWjcC6DaivEx0hVEu1BXalW5tE14Lcy1Lh5S2
+t+1GSym03Aq94nm898IHv+kv+eec5Dz/5znPcw76L/IumeIDPYk588aEk/Rk/BQ1EEfN9/LocC/P
+FlShjNWwfyHTP72+WC0SntP8cqTppr1v+MMl3yMhTRkSIKSJXZrriqnxXEGHfTfQSX8zsq26Vkgq
+ILI2lmsN+5us7qbx6YjjiRjTngTwtSbizubD0ZKGBp9Apqpki7Dxj2vRDGdkSc5vz9wk09gK7vqi
+Gu8EDs++DdiOwNG6C4jf+6BiPAwf6bx4a5XRn3xKUSsSKWK8tahpxc1k3CjTmgr6ntBDfjNEZ4WA
++xGY5Hl/7b1mCu6QG70H26Zcn1sW6GP3/PiNOvN88um2euflmN2cP71YJdr705hb436A6YAAsB7B
+kDw3WK3Wvofx7bg14vaMdaVq6faaQfNZY5D+uNeLsy/esfPFym1cAuF59a8/Wx5GqNnXAQ8iePSt
+cBpj7QaAkVguYJXsC3fGjvXMTB3p88HO+pHptJKuq9zBnhrdhMv7KcYOBFbFIfig0YwF5Rp31he9
+ZCaj9WVqMqPkN/LlKqO7bIjCp4wB2NNijaRKiREuQedQNYW9z4Dr+haoG/dAlZ2GSkYXWU3SUMHo
+wh9ROD+xBDJLBI4bArC70bKUWqS0IvynYEfYvW452JKAax56oNy2iF/9bsDHVlyRimRmRKYXqci0
+wm4ytZAgU6Sd5FqJ0sk/e6sR/e1P/HpxGMGNxjPRMgsFktFIOLvS8IC72v9heRL1P26JCx/60eA9
+oHJiqXlhWaSwzQnO6dpeKOjIYZ/4OWln/POnFdvWijvaGTn4kg6Sv7IeRQt6XmiWiK3bXK7q31pt
+iHyi90Hh/YXlozpv6DW5yZVWTLg2yNTOvG8MjuO6mbn8wRB+v5uMpkuVo9yPDPXwguxNMiSKNS8W
+EbZcuZHaR7jwif45EI9FQHI/wq2fDYfhwG0Sv3N9dDGztMv+bH7bZq6FsIbX4mtGRez+rdKKlNyy
+awMvfaly5FTfndl+dSS6q9mK32wYpXZ+PxB4pUrrTCsk9EknbmZxZhbqHuL7W5HecxkBeQlN2r9C
+xVsk9fuYHn9gJj2YIrk1niJWdjP7K0ln2t9FMtlTq1YGhP4B4PYIf3slspsAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath/>
+	</rootfolder>
+	<variables/>
+</repository>

@@ -1,0 +1,26 @@
+﻿<Properties>
+  <Array name="active">
+    <Element value="NRS_RegressionTest.rxtst" />
+  </Array>
+  <Array name="bookmarks" />
+  <Array name="files">
+    <Element value="NRS_RegressionTestRepository.rxrep" />
+    <Element value="Appraisal.cs" />
+    <Element value="Admin.cs" />
+    <Element value="NRS_RegressionTest.rxtst" />
+    <Element value="Program.cs" />
+    <Element value="WIP.cs" />
+    <Element value="Realtor.cs" />
+    <Element value="Lawyer.cs" />
+    <Element value="PM.cs" />
+    <Element value="Reports.cs" />
+    <Element value="Insurer.cs" />
+    <Element value="ManualWIP.cs" />
+    <Element value="Files.cs" />
+    <Element value="NRS_RegressionTest.rxtmg" />
+    <Element value="Lender.cs" />
+    <Element value="Login.cs" />
+    <Element value="NRS_RegressionTestRepository.cs" />
+  </Array>
+  <Properties name="projectSavedData" />
+</Properties>
