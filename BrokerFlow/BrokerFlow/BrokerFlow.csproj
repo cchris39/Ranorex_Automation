@@ -1,0 +1,121 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{FB85115A-9F25-47BC-A318-4D1BB81BB68E}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>BrokerFlow</RootNamespace>
+    <AssemblyName>BrokerFlow</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <projectdefaultrepository>37eeebb8-83a8-41e3-8f9b-27a1f7f77358</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>274d382a-0343-41e9-8689-a50f5539373f</id>
+    </Compile>
+    <Compile Include="BrokerFlowRepository.cs">
+      <DependentUpon>BrokerFlowRepository.rxrep</DependentUpon>
+      <id>651e625f-ab65-48e6-bf3c-a608ff58fdad</id>
+      <BoundTo>37eeebb8-83a8-41e3-8f9b-27a1f7f77358</BoundTo>
+      <RepositoryCode>true</RepositoryCode>
+    </Compile>
+    <Compile Include="ChangeStatus.cs">
+      <id>ae7b0288-1587-4ec0-be9b-2d80a18fed94</id>
+    </Compile>
+    <Compile Include="DBquery.cs">
+      <id>fbafa8bc-f8fe-4435-96fe-fe613d564ea7</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>68f73f9a-4537-4581-a786-5403f5077efc</id>
+    </Compile>
+    <Compile Include="ScotiaSubmitRequest.cs">
+      <id>96138532-46ab-4668-8cde-800670504e72</id>
+    </Compile>
+    <Compile Include="SearchRequest.cs">
+      <id>cedd586d-9eed-437b-90cf-630f04c27047</id>
+    </Compile>
+    <Compile Include="SubmitComment.cs">
+      <id>d52ef777-cc2d-43ae-8444-cef8ae624a21</id>
+    </Compile>
+    <Compile Include="SubmitRequest.cs">
+      <id>3fc292d6-4eed-4311-98ba-37ae62651c46</id>
+    </Compile>
+    <Compile Include="UploadSupportDocu.cs">
+      <id>56486ec2-7301-4440-be51-7cb5ef339b79</id>
+    </Compile>
+    <Compile Include="ViewAppraisalHistory.cs">
+      <id>f378fe27-a790-4cb5-9201-51c16e2fbe7f</id>
+    </Compile>
+    <Compile Include="ViewRequest.cs">
+      <id>ab04578c-dcee-4ff3-9b98-fda58c2e1dc7</id>
+    </Compile>
+    <None Include="app.config">
+      <id>ab75675c-73ba-461f-8dcb-55a5bcbda98c</id>
+    </None>
+    <None Include="BrokerFlowRepository.rximg">
+      <DependentUpon>BrokerFlowRepository.rxrep</DependentUpon>
+      <id>77b474a6-488a-49df-adb0-9e396fdd5c3b</id>
+      <BoundTo>37eeebb8-83a8-41e3-8f9b-27a1f7f77358</BoundTo>
+      <imageblob>true</imageblob>
+    </None>
+    <None Include="BrokerFlowRepository.rxrep">
+      <id>37eeebb8-83a8-41e3-8f9b-27a1f7f77358</id>
+      <repoid>0c91462e-c509-4cfa-9d26-5345b81750dc</repoid>
+      <reporootid>2fb11da8-6c9b-4473-b2e2-32b57231dea5</reporootid>
+    </None>
+    <Content Include="BrokerFlow.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>ef7a68ff-320d-4684-adf9-b361a5342b19</id>
+    </Content>
+    <Content Include="BrokerFlow.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>555418af-b528-4eb7-807e-7fee3dee14be</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>
