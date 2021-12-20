@@ -34,8 +34,8 @@ namespace RBC_Test
 		
 		static OrderRequest instance = new OrderRequest();
     		
-			private string uid = "rbc@nationwideappraisals.com";
-    		private string pwd = "Fullmoon#16";
+			private string uid = "testrbc@nas.com";
+    		private string pwd = "xxxxxxx";
     		private string url = "https://uattest.nas.com/NAS/rbcpvpnas";
 		
 			private const string streetName = "RBC Sanity test";
