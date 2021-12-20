@@ -1,0 +1,141 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DB062B04-F89C-4F8E-A2C1-D3D53A3D1B4C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>NasAdmin</RootNamespace>
+    <AssemblyName>NasAdmin</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>fad5be20-2be4-40b9-9a3d-ec3a5e776d28</projectdefaultrepository>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.PDF, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\Users\an.zhou\Downloads\Ranorex_PDF_Library\Ranorex.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminComment.cs">
+      <id>2e944a18-68cc-4c50-8e6d-3d9916af3aa4</id>
+    </Compile>
+    <Compile Include="AdminSearchRequest.cs">
+      <id>a19137e5-4fb0-4124-84a5-09d40dc01443</id>
+    </Compile>
+    <Compile Include="AdminSubmitRequest.cs">
+      <id>00833bfd-7716-4156-96f5-a2c2a8c3a1d3</id>
+    </Compile>
+    <Compile Include="AdminViewRequest.cs">
+      <id>cddc835a-7a5e-42b3-a6a3-2d70dd577df9</id>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <id>7c7b6176-72f2-4fa5-a275-0935875efb4e</id>
+    </Compile>
+    <Compile Include="DatabaseQuery.cs">
+      <id>5361dfcf-d7a1-4a5e-bba3-f0c38488d385</id>
+    </Compile>
+    <Compile Include="FeeIncrease.cs">
+      <id>69bc96c7-88b0-4319-96e5-a2be395e2f00</id>
+    </Compile>
+    <Compile Include="NasAdminRepository.cs">
+      <BoundTo>fad5be20-2be4-40b9-9a3d-ec3a5e776d28</BoundTo>
+      <DependentUpon>NasAdminRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>32e274c1-5f86-4bed-b7c5-9bcab508bd3c</id>
+    </Compile>
+    <Compile Include="onHoldoffHold.cs">
+      <id>0a784cbd-8bb8-4cfb-80cb-ce3b9b4585d2</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>7e2c18fe-16db-43fd-9759-f703f811579e</id>
+    </Compile>
+    <Compile Include="ReassignAppraiser.cs">
+      <id>343e8405-4671-471e-8fdf-0e0573b66d59</id>
+    </Compile>
+    <Compile Include="ReportToPDF.cs">
+      <id>a5c5d3f7-1cd9-4083-8789-a2c77df5b695</id>
+    </Compile>
+    <Compile Include="Resubmit.cs">
+      <id>589f0270-9f0d-47f1-8f1d-9cd8b6c6b27d</id>
+    </Compile>
+    <Compile Include="SetAppointment.cs">
+      <id>e1937700-08d1-4c72-81ef-36687cec1f5c</id>
+    </Compile>
+    <Compile Include="UploadEditPDF.cs">
+      <id>dfc3a468-2e29-4eae-89ff-f135b8dc1bd6</id>
+    </Compile>
+    <None Include="app.config">
+      <id>763fdf39-ea2c-4e87-8fbf-fb0fa4e59e86</id>
+    </None>
+    <None Include="NasAdminRepository.rximg">
+      <BoundTo>fad5be20-2be4-40b9-9a3d-ec3a5e776d28</BoundTo>
+      <DependentUpon>NasAdminRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>6c032c46-7b3a-4abe-bd4e-879fa7c8a965</id>
+    </None>
+    <None Include="NasAdminRepository.rxrep">
+      <id>fad5be20-2be4-40b9-9a3d-ec3a5e776d28</id>
+      <repoid>1df12031-a802-452e-9bf8-fa1094ebb96d</repoid>
+      <reporootid>ac173e64-35d5-4ec0-8894-94eadc2db498</reporootid>
+    </None>
+    <Content Include="NasAdmin.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>5ac05b7e-b2aa-427f-bb97-baae162c6c01</id>
+    </Content>
+    <Content Include="NasAdmin.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e34467e1-5504-404a-a2fe-f7fb732ba70c</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>
