@@ -1,0 +1,3 @@
+2016.05.04
+
+For 'Quality Issue Comment'  and 'Value Appeal' test cases, please run seperately with the other test cases, since the status is changed to cancelled and not in 'Completed' status.

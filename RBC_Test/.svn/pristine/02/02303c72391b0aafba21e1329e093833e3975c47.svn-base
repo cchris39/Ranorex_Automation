@@ -1,0 +1,135 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{2E11C79D-8DB8-4ED5-AE73-BF4557A519FB}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RBC_Test</RootNamespace>
+    <AssemblyName>RBC_Test</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <projectdefaultrepository>ad3fc49c-08de-4326-930a-0b97e4fc8505</projectdefaultrepository>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.PDF, Version=$(RanorexVersion)">
+      <HintPath>..\..\..\..\Users\an.zhou\Downloads\Ranorex_PDF_Library\Ranorex.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>eb37d32d-2af3-49fd-8427-90251091cd35</id>
+    </Compile>
+    <Compile Include="ChangeStatus.cs">
+      <id>2bd629aa-bf31-41f8-ac4a-eec0a9a8ab06</id>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <id>5f3b4925-3e51-4cc7-b698-e164987bd014</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <id>daff9c37-71b2-45aa-be8a-6b12b6b53d87</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>d565b8f4-4da6-4db9-84e2-43ecb4040dc4</id>
+    </Compile>
+    <Compile Include="QueryDB.cs">
+      <id>8860afab-06e2-4a68-bcb3-b9e2d5fd8d29</id>
+    </Compile>
+    <Compile Include="RBC_TestRepository.cs">
+      <BoundTo>ad3fc49c-08de-4326-930a-0b97e4fc8505</BoundTo>
+      <DependentUpon>RBC_TestRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>361592f0-a27c-44fd-bf0a-c6c573a9e0ae</id>
+    </Compile>
+    <Compile Include="ReportToPDF.cs">
+      <id>01927b4a-46a6-47c0-b1a4-3a6b87988729</id>
+    </Compile>
+    <Compile Include="RequestService.cs">
+      <id>14058f88-67c8-4b97-9370-319d7a5fb325</id>
+    </Compile>
+    <Compile Include="OrderRequest.cs">
+      <id>aef981f2-8614-46b3-9ab2-c9e8e13e4945</id>
+    </Compile>
+    <Compile Include="SearchRequest.cs">
+      <id>ce8f9d89-8f05-4c10-8837-a44cabf78bfc</id>
+    </Compile>
+    <Compile Include="UploadDocu.cs">
+      <id>bf1653bf-30e6-46c7-8e62-11ae36a92c6a</id>
+    </Compile>
+    <Compile Include="ViewRequest.cs">
+      <id>89c2d77c-93c4-430f-8302-7d1c028231c4</id>
+    </Compile>
+    <None Include="app.config">
+      <id>8a261f8c-afab-42b3-ad3b-a7029e7b34af</id>
+    </None>
+    <None Include="RBC_TestRepository.rximg">
+      <BoundTo>ad3fc49c-08de-4326-930a-0b97e4fc8505</BoundTo>
+      <DependentUpon>RBC_TestRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>7a20f89c-2a64-4114-85dc-4494cafc02d3</id>
+    </None>
+    <None Include="RBC_TestRepository.rxrep">
+      <id>ad3fc49c-08de-4326-930a-0b97e4fc8505</id>
+      <repoid>7515bd74-8b3e-484a-9d88-4adde38e789d</repoid>
+      <reporootid>211ce070-85fe-4b53-a74c-21068e33050e</reporootid>
+    </None>
+    <Content Include="RBC_Test.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>925018b6-0911-4ca7-81ea-581bf56df60b</id>
+    </Content>
+    <Content Include="RBC_Test.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>b485a38a-a7d6-41bb-bd04-0e7e5f2ba849</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>
