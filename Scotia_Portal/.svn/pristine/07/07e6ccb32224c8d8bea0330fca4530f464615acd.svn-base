@@ -1,0 +1,121 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{CFB4191C-939F-4CDB-A6A3-8D8C583B965A}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Scotia_Portal</RootNamespace>
+    <AssemblyName>Scotia_Portal</AssemblyName>
+    <RanorexVersion>5</RanorexVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <projectdefaultrepository>2ad68d98-c6ca-441f-a463-339faaa0acf1</projectdefaultrepository>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+  <ItemGroup>
+    <Reference Include="MySql.Data" />
+    <Reference Include="Ranorex.Core, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.ChromeWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Flex, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Java, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Mobile, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.MozillaWeb, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Msaa, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Office, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Qt, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.RawText, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Sap, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Uia, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Web, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Win32, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.WinForms, Version=$(RanorexVersion)" />
+    <Reference Include="Ranorex.Plugin.Wpf, Version=$(RanorexVersion)" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs">
+      <id>a5934bc1-ee79-4ec7-b24d-0f7b84d16ecc</id>
+    </Compile>
+    <Compile Include="ChangeStatus.cs">
+      <id>e4a8be90-e79d-47f3-8924-96773e35e28f</id>
+    </Compile>
+    <Compile Include="Comment.cs">
+      <id>48964661-2d90-4c1e-ac2f-2e7facd78d92</id>
+    </Compile>
+    <Compile Include="Login.cs">
+      <id>75409315-f775-49e5-98f8-07b129327e02</id>
+    </Compile>
+    <Compile Include="Program.cs">
+      <id>5a054e60-3f83-4426-9ee2-82535a05021f</id>
+    </Compile>
+    <Compile Include="QueryDB.cs">
+      <id>8b0eaeb0-fa4c-4171-b55b-37df1b873ff9</id>
+    </Compile>
+    <Compile Include="RequestService.cs">
+      <id>57bb0691-9d80-40eb-9fd3-e9ecd1a339b6</id>
+    </Compile>
+    <Compile Include="ScotiaDesktop.cs">
+      <id>e8801a4c-79f6-4c7a-85b4-a05704710f07</id>
+    </Compile>
+    <Compile Include="Scotia_PortalRepository.cs">
+      <BoundTo>2ad68d98-c6ca-441f-a463-339faaa0acf1</BoundTo>
+      <DependentUpon>Scotia_PortalRepository.rxrep</DependentUpon>
+      <RepositoryCode>true</RepositoryCode>
+      <id>c4b4cec4-9852-43f3-93a5-d3aa7e5b7080</id>
+    </Compile>
+    <Compile Include="SearchRequest.cs">
+      <id>de79b36b-e890-4a08-aacf-56029d8c49a5</id>
+    </Compile>
+    <Compile Include="UploadDocu.cs">
+      <id>01da5baf-4eb1-432d-88d3-a086e8f4796a</id>
+    </Compile>
+    <Compile Include="ViewRequest.cs">
+      <id>8b432d74-a0f8-4890-b8d1-0d7017a48401</id>
+    </Compile>
+    <None Include="app.config">
+      <id>9e9015a5-04b1-416c-9e89-67cfd7d15535</id>
+    </None>
+    <None Include="Scotia_PortalRepository.rximg">
+      <BoundTo>2ad68d98-c6ca-441f-a463-339faaa0acf1</BoundTo>
+      <DependentUpon>Scotia_PortalRepository.rxrep</DependentUpon>
+      <imageblob>true</imageblob>
+      <id>bf421533-fe1d-4f45-9ec4-fd18ac3cc2bb</id>
+    </None>
+    <None Include="Scotia_PortalRepository.rxrep">
+      <id>2ad68d98-c6ca-441f-a463-339faaa0acf1</id>
+      <repoid>711fa774-8ae5-435d-ab0e-d32afd82e71e</repoid>
+      <reporootid>c0425ae2-0fe0-4884-8a21-5361c78e7b2c</reporootid>
+    </None>
+    <Content Include="Scotia_Portal.rxtmg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>9bf2570f-3aa0-463a-b339-d3b7250d89d4</id>
+    </Content>
+    <Content Include="Scotia_Portal.rxtst">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <id>e5592351-f7c0-4f19-aa14-8a7747fcad75</id>
+    </Content>
+  </ItemGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets')" Project="$(MSBuildExtensionsPath)\Ranorex$(RanorexVersion)\Ranorex.MSBuild.Targets" />
+</Project>
